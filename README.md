@@ -1,4 +1,6 @@
 # LLM-Classification-Finetuning
+https://www.kaggle.com/competitions/llm-classification-finetuning
+This repository contains two approaches to solving a text classification problem in the context of a Kaggle competition focused on **LLM fine-tuning**. The competition aims to encourage participants to experiment with various strategies to optimize language models for specific downstream tasks, showcasing both performance improvements and practical trade-offs.
 
 ## Preprocessing
 Effective text classification begins with robust data cleaning and preprocessing. The raw dataset provided in the competition required several steps to prepare it for modeling:
@@ -7,24 +9,21 @@ Effective text classification begins with robust data cleaning and preprocessing
 - Removing Noise: Eliminated irrelevant characters, stopwords, and punctuation to reduce noise.
 - Lowercasing: Standardized the text by converting it to lowercase.
 - Tokenization: Split text into individual words or tokens for further processing.
-- Handling Missing Data: Addressed missing or incomplete entries by either filling with placeholders or dropping records as appropriate.
+- Handling Missing Data: Addressed missing or incomplete entries by filling with placeholders or dropping records as appropriate.
 # 2. Preprocessing
 - TF-IDF Vectorization: Transformed the cleaned text into numerical representations using Term Frequency-Inverse Document Frequency (TF-IDF), capturing the relative importance of words across the dataset.
 - Feature Scaling: Normalized the feature space to ensure compatibility with machine learning models.
 - Class Balancing: Addressed class imbalances through techniques like oversampling or weighted loss functions to ensure fair model training.
 #3. Initial Modeling: Logistic Regression and SVM
-- To establish a baseline, we trained Logistic Regression and Support Vector Machine (SVM) models on the preprocessed text data. These models were chosen for their simplicity and effectiveness in text  classification tasks. However, their performance metrics revealed clear limitations:
+- We trained Logistic Regression and Support Vector Machine (SVM) models on the preprocessed text data to establish a baseline. These models were chosen for their simplicity and effectiveness in text  classification tasks. However, their performance metrics revealed clear limitations:
 
-Accuracy: Approximately 0.4, highlighting difficulty in capturing the complexity of the text dataset.
+Accuracy: Approximately 0.4, highlighting the difficulty in capturing the complexity of the text dataset.
 Insights: While TF-IDF provided a reasonable feature set, traditional models struggled to generalize well, especially on nuanced or contextually rich categories.
 These initial experiments underscored the need for more advanced modeling techniques, prompting the exploration of LLM fine-tuning.
 
 
 
 ## Comparing BERT-Based and Non-BERT LLMs for Fine-Tuning in Text Classification
-
-This repository contains two approaches to solving a text classification problem in the context of a Kaggle competition focused on **LLM fine-tuning**. The competition's goal is to encourage participants to experiment with various strategies to optimize language models for specific downstream tasks, showcasing both performance improvements and practical trade-offs.
-https://www.kaggle.com/competitions/llm-classification-finetuning
 
 ### The Problem and Context
 
